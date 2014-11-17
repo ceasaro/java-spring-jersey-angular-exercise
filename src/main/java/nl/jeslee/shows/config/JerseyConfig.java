@@ -2,6 +2,8 @@ package nl.jeslee.shows.config;
 
 
 import nl.jeslee.shows.Application;
+import nl.jeslee.shows.jersey.filter.CORSResponseFilter;
+import org.apache.catalina.filters.CorsFilter;
 import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -35,6 +37,7 @@ public class JerseyConfig extends ResourceConfig {
         property(ServerProperties.MOXY_JSON_FEATURE_DISABLE, true);
         property(ServerProperties.WADL_FEATURE_DISABLE, true);
         register(LoggingFilter.class);
+        register(CORSResponseFilter.class);
         register(JacksonFeature.class);
     }
 }

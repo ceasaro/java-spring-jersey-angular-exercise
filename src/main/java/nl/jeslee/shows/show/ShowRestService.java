@@ -25,8 +25,8 @@ import java.util.List;
 @Path("/")
 public class ShowRestService {
 
-    @Inject
-    private ShowService showService;
+//    @Inject
+//    private ShowService showService;
 
     /**
      * Returns info about the REST-API
@@ -37,10 +37,12 @@ public class ShowRestService {
 //    @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 //    @Transactional
-    @Path("piet")
+    @Path("/")
     public List<Show> test() {
         ArrayList<Show> shows = new ArrayList<Show>();
-        shows.add(new Show("harry potter"));
+        shows.add(new Show("Cinderella"));
+        shows.add(new Show("Beauty and the beast"));
+        shows.add(new Show("Snow white and the seven dwarfs"));
         return shows;
     }
 
