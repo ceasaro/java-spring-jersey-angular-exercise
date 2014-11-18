@@ -20,14 +20,13 @@ The src directory contains four directories:
   1. angularJS      - contains the front end build in AngularJS (html pages) 
   2. main           - contains the REST-API build in java Spring en Jersey
   3. test           - test for the main java application (REST-API)
-  4. jersey_patch   - A copy of the jersey-spring3 module to make the spring context available to jersey.
+  4. jersey_patch   - NOT READY, A copy of the jersey-spring3 module to make the spring context available to jersey.
   
 ##Issues
-Jersey can't get access to the spring context, their is a library 'org.glassfish.jersey.ext' which provide support for
+Jersey can't get access to the spring context, their is a library 'org.glassfish.jersey.ext' which provides support for
  Spring3 integration, but when bundled with the application is tries to load a spring context itself resulting in an 
  error noting that their is already a context present and it's not able to initialize a second.
- 
- I'm using java based configuration for spring as well as for the java servlets. Their is an example 
+I'm using java based configuration for spring as well as for the java servlets. Their is an example 
  [here](http://stackoverflow.com/questions/25701658/integrating-jersey-2-and-spring-with-java-based-configuration)
  using a web.xml configuration for the servlets.
   
