@@ -18,7 +18,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import static org.springframework.context.annotation.ComponentScan.Filter;
 
 @Configuration
-//@ComponentScan(basePackageClasses = Application.class, includeFilters = @Filter(Controller.class), useDefaultFilters = false)
+@ComponentScan(basePackageClasses = Application.class, includeFilters = @Filter(Controller.class), useDefaultFilters = false)
 class WebMvcConfig extends WebMvcConfigurationSupport {
 
     private static final String MESSAGE_SOURCE = "/WEB-INF/i18n/messages";

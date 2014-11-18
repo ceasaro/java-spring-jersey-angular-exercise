@@ -17,7 +17,7 @@
         <org.slf4j-version>1.7.5</org.slf4j-version>
         <ch.qos.logback-version>1.0.13</ch.qos.logback-version>
         <org.hibernate-version>4.3.0.Final</org.hibernate-version>
-        <org.spring-version>4.0.3.RELEASE</org.spring-version>
+        <org.spring-version>4.0.6.RELEASE</org.spring-version>
         <org.thymeleaf-version>2.1.2.RELEASE</org.thymeleaf-version>
         <org.thymeleaf.extras.springsecurity3-version>2.1.1.RELEASE</org.thymeleaf.extras.springsecurity3-version>
     </properties>
@@ -92,22 +92,6 @@
             <artifactId>hk2-api</artifactId>
             <version>2.3.0</version>
         </dependency>
-
-        <!--
-                <dependency>
-                    <groupId>org.glassfish.jersey.containers</groupId>
-                    &lt;!&ndash; if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core"  &ndash;&gt;
-                    <artifactId>jersey-container-servlet</artifactId>
-                    <version>${jersey.version}</version>
-                </dependency>
-                &lt;!&ndash; Required only when you are using JAX-RS Client &ndash;&gt;
-                <dependency>
-                    <groupId>org.glassfish.jersey.core</groupId>
-                    <artifactId>jersey-client</artifactId>
-                    <version>${jersey.version}</version>
-                </dependency>
-
-        -->
 
         <!-- Spring -->
         <dependency>

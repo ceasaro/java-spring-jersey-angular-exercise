@@ -26,7 +26,7 @@ import java.util.List;
 
 @Configuration
 @ApplicationPath("/v1.0")
-//@ComponentScan(basePackageClasses = Application.class, includeFilters = @ComponentScan.Filter({Controller.class, Component.class}), useDefaultFilters = false)
+@ComponentScan(basePackageClasses = Application.class, includeFilters = @ComponentScan.Filter({Controller.class}), useDefaultFilters = false)
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
